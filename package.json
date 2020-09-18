@@ -2,7 +2,7 @@
   "name": "ai-4cyber-team8-prod",
   "version": "8.1.0",
   "scripts": {
-    "heroku-postbuild": "ng build --prod",
+    "heroku-postbuild": "ng build",
     "ng": "ng",
     "start": "node server.js",
     "build": "ng build",
