@@ -1,5 +1,5 @@
 {
-  "name": "ai-4cyber-team8-prod",
+  "name": "ai-4cyber-team8",
   "version": "8.1.0",
   "scripts": {
     "heroku-postbuild": "ng build",

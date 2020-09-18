@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "mdb-angular-boilerplate:build"
+            "browserTarget": "ai-4cyber-team8:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "mdb-angular-boilerplate:build:production"
+              "browserTarget": "ai-4cyber-team8:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mdb-angular-boilerplate:build"
+            "browserTarget": "ai-4cyber-team8:build"
           }
         },
         "test": {
@@ -108,7 +108,7 @@
         }
       }
     },
-    "mdb-angular-boilerplate-e2e": {
+    "ai-4cyber-team8-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -116,11 +116,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "mdb-angular-boilerplate:serve"
+            "devServerTarget": "ai-4cyber-team8:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "mdb-angular-boilerplate:serve:production"
+              "devServerTarget": "ai-4cyber-team8:serve:production"
             }
           }
         },
@@ -136,7 +136,7 @@
       }
     }
   },
-  "defaultProject": "mdb-angular-boilerplate",
+  "defaultProject": "ai-4cyber-team8",
   "cli": {
     "defaultCollection": "@ngrx/schematics"
   }
