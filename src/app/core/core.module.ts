@@ -16,16 +16,20 @@ import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   imports: [
     CommonModule,
+    BrowserAnimationsModule,
     NavbarModule,
     IconsModule,
     RouterModule,
     DropdownModule.forRoot(),
     CardsModule,
-    ButtonsModule
+    ButtonsModule,
+    CarouselModule.forRoot()
   ],
   declarations: [
     HeaderComponent,

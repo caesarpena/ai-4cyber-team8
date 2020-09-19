@@ -1,0 +1,40 @@
+
+.slide__container {
+    background: #3D3D3D;
+    color: #fff;
+
+
+
+    .lead {
+        justify-content: center;
+        .container__text {
+            text-align: left;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .container__img {
+            text-align: left;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            img {
+                width: 700px;
+                height: 500px;
+            }
+        }
+        a {
+            color: #22ccff;
+        }
+    }
+}
+
+.container__background {
+    padding: 50px;
+}
+.container__trends {
+    padding: 50px;
+}

@@ -8,14 +8,18 @@ import { MainComponent } from './core/main/main.component';
 import { PageNotFoundComponent } from './core/page-not-found/page-not-found.component';
 import { AdminComponent } from './admin/containers/admin/admin.component';
 import { AdminGuard } from './admin/guard/admin.guard';
+import { AboutComponent } from './about/about.component';
+import { ModellingComponent } from './modelling/modelling.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, children: [
     { path: '', component: MainComponent},
-    { path: 'projects', loadChildren: './projects/projects.module#ProjectsModule', canActivate: [AuthGuard]},
-    { path: 'customers', loadChildren: './customers/customers.module#CustomersModule', canActivate: [AuthGuard]},
-    { path: 'profile', loadChildren: './profile/profile.module#ProfileModule', canActivate: [AuthGuard] },
-    { path: 'charts', loadChildren: './charts/charts.module#ChartsDataModule', canActivate: [AuthGuard] },
+    { path: 'about', component: AboutComponent, canActivate: [AuthGuard]},
+    { path: 'modelling', component: ModellingComponent, canActivate: [AuthGuard]},
+    // { path: 'projects', loadChildren: './projects/projects.module#ProjectsModule', canActivate: [AuthGuard]},
+    // { path: 'customers', loadChildren: './customers/customers.module#CustomersModule', canActivate: [AuthGuard]},
+    // { path: 'profile', loadChildren: './profile/profile.module#ProfileModule', canActivate: [AuthGuard] },
+    // { path: 'charts', loadChildren: './charts/charts.module#ChartsDataModule', canActivate: [AuthGuard] },
     { path: 'admin-panel', component: AdminComponent, canActivate: [AdminGuard]}
   ]},
   { path: 'register', component: RegisterComponent },

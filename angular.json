@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ai-4cyber-team8-prod": {
+    "ai-4cyber-team8": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",

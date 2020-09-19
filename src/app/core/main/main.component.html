@@ -1,74 +1,199 @@
-<div class="container py-5">
-  <div class="row">
-    <div class="col-md-6">
-      <mdb-card class="animated fadeIn mb-3" borderColor="border-warning">
-        <mdb-card-header>App section</mdb-card-header>
-        <mdb-card-body class="p-3">
-          <mdb-card-title>
-            <h5 class="mb-3">Projects</h5>
-          </mdb-card-title>
-          <mdb-card-text>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi blanditiis, assumenda dolorem
-            possimus id qui ut eaque. Similique porro labore commodi impedit deserunt? Officiis nihil rem aut molestias
-            illum eos! Similique accusantium reprehenderit necessitatibus quo totam provident laudantium recusandae
-            sapiente, nemo ex illum nobis, officia, vero dolores! Distinctio similique pariatur, at sint nemo quidem
-            commodi vel rerum aliquid quibusdam? Perferendis.</mdb-card-text>
-          <a routerLink="/projects" mdbBtn color="orange">Go to section</a>
-        </mdb-card-body>
-      </mdb-card>
-    </div>
+<div class="container-fluid py-5">
+  <div>
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <button [ngClass]="{'active': tab === '0'}"  (click)="onClickTab('0')" class="nav-link btn btn-link">Background of industry</button>
+      </li>
+      <li class="nav-item">
+        <button [ngClass]="{'active': tab === '1'}" (click)="onClickTab('1')" class="nav-link btn btn-link">Threat Trends</button>
+      </li>
+    </ul>
+    <div *ngIf="tab === '0'">
+      <div class="container__background">
+        <p>Russia, North Korea and China  are the leading countries that oppose a high level threat for the financial sector in the united states. These groups often founded by their governments often hack to obtain financial profit or for information that is worth money. Some hack to satisfy their egos or gain peer recognition. Some hack alone, and some hack in groups. But many hackers, or more accurately “hacktivists,” join groups like Anonymous in order to demonstrate their dissatisfaction with powerful organizations, such as corporations and governments who fail to share their world views.
+          The level of sophistication that these groups possess is considered to have a sub-state capability. The types of malware that the group uses provide a wide range of possibilities, including threat of authorizations, disabling AV tools, threat of credit cards details and personal information, seizing control over R&D and more.
+          </p>
+          <p>There were 1,579 data breaches in 2017
+            The Banking/Credit/Financial sector rounds out the top three with 8.5 percent of the overall total (134). This is only the second time since 2005 that the Banking/Credit/Financial sector has ranked in the top three industry categories. Hacking continues to rank highest in the type of attack, at 59.4 percent of the breaches, an increase of 3.2 percent over 2016 figures: Of the 940 breaches attributed to hacking, 21.4 percent involved phishing and 12.4 percent involved ransomware/malware.
+          </p>
+          <p>
+            31% of data breach victims later experience identity theft
+            The Identity Theft Resource Center (ITRC) recently announced its 2017 Data Breach report and it's no surprise that breaches are up.Last year there were 1,579 data breaches exposing nearly 179 million records.That represents a 44% increase in the number of breaches and a 389% increase in records exposed.
+            The IRTC report also stated that the number of credit card numbers exposed in 2017 totaled 14.2 million, up 88% over 2016. In addition, nearly 158 million Social Security numbers were exposed in 2017, an increase of more than eight times the number in 2016.
+          </p>
+            <!-- <carousel>
+          <slide>
+            <div class="text-center py-5 slide__container">
+              <h2>The Top Threat Actors Targeting Financial Services Organizations</h2>
+              <div class="lead d-flex mt-5 mb-2">
+                <div class="container__text mr-5">
+                  <div>
+                    <p>Top Cybercrime Groups Targeting Financial Organizations</p>
+                    <ul>
+                      <li><strong>Country:</strong> Russia</li>
+                      <li><strong> Threat Level:</strong> High</li>
+                      <li><strong>Level of Sophistication:</strong> High, the group is known for their self-developed attacking tools, customization of public tools for their needs, tools for erasing footprints, and malware that will run even after rebooting.</li>
+                      <li><strong>Countries of Operation:</strong> Worldwide</li>
+                      <li><strong>Typical Targets:</strong> Banks, financial services companies, supply chain (companies providing services and/or technology to financial companies)</li>
+                      <li><strong>Attributed Campaigns:</strong>More than 20 successful attacks on banks, financial institutions and law firms in the USA, UK, and Russia.</li>
+                      <li><strong>Also Known As:</strong>Annaunak, Anunak, Carbon Spider, FIN7, Navigator, TelePort Crew, Calcium</li>
+                    </ul>
+                  </div>
+                  <a class="bold" href="https://www.experian.com/blogs/ask-experian/identity-theft-statistics/"> The Identity Theft Resource Center</a>
+                </div>
+                <div class="container__img">
+                  <p>Attacking Tools</p>
+                  <img src="assets/images/KC-bgadd.png" alt="">
+                </div>
+              </div>
+            </div>
+          </slide>
+          <slide>
+            <div class="text-center py-5 slide__container">
+              <h2>2017 ANNUAL DATA BREACH YEAR-END REVIEW</h2>
+              <div class="lead d-flex mt-5 mb-2">
+                <div class="container__text mr-5">
+                  <div>
+                    <p>There were 1,579 data breaches in 2017</p>
+                    <p> The Banking/Credit/Financial sector rounds out the top
+                      three with 8.5 percent of the overall total (134). This is only the second time since 2005 that the
+                      Banking/Credit/Financial sector has ranked in the top three industry categories.
 
-    <div class="col-md-6">
-      <mdb-card class="animated fadeIn mb-3" borderColor="border-warning">
-        <mdb-card-header>App section</mdb-card-header>
-        <mdb-card-body class="p-3">
-          <mdb-card-title>
-            <h5 class="mb-3">Tables</h5>
-          </mdb-card-title>
-          <mdb-card-text>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi blanditiis, assumenda dolorem
-            possimus id qui ut eaque. Similique porro labore commodi impedit deserunt? Officiis nihil rem aut molestias
-            illum eos! Similique accusantium reprehenderit necessitatibus quo totam provident laudantium recusandae
-            sapiente, nemo ex illum nobis, officia, vero dolores! Distinctio similique pariatur, at sint nemo quidem
-            commodi vel rerum aliquid quibusdam? Perferendis.</mdb-card-text>
-          <a routerLink="/customers" mdbBtn color="orange">Go to section</a>
-        </mdb-card-body>
-      </mdb-card>
+                      Hacking continues to rank highest in the type of attack, at 59.4 percent of the breaches, an increase
+                      of 3.2 percent over 2016 figures: Of the 940 breaches attributed to hacking, 21.4 percent involved
+                      phishing and 12.4 percent involved ransomware/malware.
+                    </p>
+                  </div>
+                  <a class="bold" href="https://www.idtheftcenter.org/images/breach/2017Breaches/2017AnnualDataBreachYearEndReview.pdf"> The Identity Theft Resource Center</a>
+                  </div>
+                <div class="container__img">
+                  <img src="assets/images/percent of breaches by industry sector.png">
+                </div>
+              </div>
+            </div>
+          </slide>
+          <slide>
+            <div class="text-center py-5 slide__container">
+              <h2>Data Breach Growth</h2>
+              <div class="lead d-flex mt-5 mb-2">
+                <div class="container__text mr-5">
+                  <div>
+                    <p>31% of data breach victims later experience identity theft</p>
+                    <p>The Identity Theft Resource Center (ITRC) recently announced its 2017 Data Breach report and it's no surprise that breaches are up.Last year there were 1,579 data breaches exposing nearly 179 million records.That represents a 44% increase in the number of breaches and a 389% increase in records exposed.</p>
+                    <P>The IRTC report also stated that the number of credit card numbers exposed in 2017 totaled 14.2 million, up 88% over 2016. In addition, nearly 158 million Social Security numbers were exposed in 2017, an increase of more than eight times the number in 2016.</P>
+                  </div>
+                  <a class="bold" href="https://www.experian.com/blogs/ask-experian/identity-theft-statistics/"> The Identity Theft Resource Center</a>
+                  </div>
+                <div class="container__img">
+                </div>
+              </div>
+            </div>
+          </slide>
+          
+        </carousel> -->
+      </div>
     </div>
-  </div>
-  <div class="row">
-
-    <div class="col-md-6">
-      <mdb-card class="animated fadeIn mb-3" borderColor="border-warning">
-        <mdb-card-header>App section</mdb-card-header>
-        <mdb-card-body class="p-3">
-          <mdb-card-title>
-            <h5 class="mb-3">Charts</h5>
-          </mdb-card-title>
-          <mdb-card-text>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi blanditiis, assumenda dolorem
-            possimus id qui ut eaque. Similique porro labore commodi impedit deserunt? Officiis nihil rem aut molestias
-            illum eos! Similique accusantium reprehenderit necessitatibus quo totam provident laudantium recusandae
-            sapiente, nemo ex illum nobis, officia, vero dolores! Distinctio similique pariatur, at sint nemo quidem
-            commodi vel rerum aliquid quibusdam? Perferendis.</mdb-card-text>
-          <a routerLink="/charts" mdbBtn color="orange">Go to section</a>
-        </mdb-card-body>
-      </mdb-card>
+    <div *ngIf="tab === '1'">
+      <div class="container__trends">
+        <div>
+          <h4 class="my-2">Data Breach Growth over the years</h4>
+            <iframe src="https://e.infogram.com/3036d8b1-0994-4859-a222-6b0c6b372609?src=embed" title="Data Breach Growth over the years" style="overflow:hidden;width:100%;border:none;"  width="100%" width="auto" height="700" scrolling="no" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        </div>
+        <div>
+          <h5 class="my-2">The Top Threat Actors Targeting Financial Services Organizations</h5>
+          <carousel>
+            <slide>
+              <div class="text-center py-5 slide__container">
+                <h5><strong>DarkSeoul</strong></h5>
+                <div class="lead d-flex mt-5 mb-2">
+                  <div class="container__text mr-5">
+                    <div>
+                      <h5><strong>Country:</strong> North Korea</h5>
+                      <h5><strong>Campaigns</strong></h5>
+                      <ul>
+                        <li>The attack on sony Pictures</li>
+                        <li>WannaCry ransomware attack on multiple organizations around the world • Theft of $12 M from Banco del Austro in Ecuador</li>
+                        <li>Theft of $1 M from Tien Phong Bank in Vietnam – SWIFT attack</li>
+                        <li>Theft of $81 M from the Central Bank of Bangladesh</li>
+                        <li>Theft of $60 M from FEIB Bank in Taiwan</li>
+                        <li>Theft of $5 M from various banks in Nepal</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="container__img">
+                    <h5><strong>Attacking Tools</strong></h5>
+                    <ul>
+                      <li>Banswift – Malware used to steal information</li>
+                      <li>Solarbot – botnet used to steal personal details from online forms</li>
+                      <li>Ratankba / QuickRide – tool for collecting information from a computer, it also can download and upload executable files</li>
+                      <li>Enigma Protector – tool used to protect executable files/li>
+                      <li>SilverLight – tool used to exploit vulnerabilities in Flash</li>
+                      <li>Recon – scanning tool used to identify systems of interest</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </slide>
+            <slide>
+              <div class="text-center py-5 slide__container">
+                <h5><strong>Known as: </strong>Annaunak, Anunak, Carbon Spider, FIN7, Navigator, TelePort Crew, Calcium</h5>
+                
+                <div class="lead d-flex mt-5 mb-2">
+                  <div class="container__text mr-5">
+                    <div>
+                      <h5><strong>Country:</strong> Russia</h5>
+                      <h5><strong>Campaigns:</strong></h5>
+                      <p>More than 20 successful attacks on banks, financial institutions and law firms in the USA, UK, and Russia.
+                        High level of sophistication the group is known for their self-developed attacking tools, customization of public tools for their needs, tools for erasing footprints, and malware that will run even after rebooting.
+                      </p>
+                    </div>
+                    <a class="bold" href="https://intsights.com/blog/the-top-threat-actors-targeting-financial-services-organizations">The Top Threat Actors Targeting Financial Services Organizations</a>
+                  </div>
+                  <div class="container__img">
+                    <h5><strong>Attacking Tools</strong></h5>
+                    <ul>
+                      <li>MoneyTaker – for altering the details of accounts that are about to receive a money transfer</li>
+                      <li>Metasploit and powershell – for hacking, gaining control and stealing authorizations</li>
+                      <li>Screenshotter / Keyloggers – for recording keystrokes and screenshots</li>
+                      <li>LogmeIn Hamachi, UltraVNC, Plink and NirCmd – for gaining remote control and executing orders.</li>
+                      <li>ASLRSideChannelattack – for stealing highly classified authorizations</li>
+                      <li>Mimikatz – for stealing identification details (usernames and passwords)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </slide>
+            <slide>
+              <div class="text-center py-5 slide__container">
+                <h5><strong>MetaStrike</strong></h5>
+                <div class="lead d-flex mt-5 mb-2">
+                  <div class="container__text mr-5">
+                    <div>
+                      <h5><strong>Country:</strong> Russia</h5>
+                      <h5><strong>Campaigns</strong></h5>
+                      <p>High, sub-state capabilities, including detection and exploitation of vulnerabilities, and ongoing updating of the systems and targets they attack.
+                        the group was attributed more than 300 successful attacks on banks, financial institutions and retailers. In addition, the attack on Oracle systems and the company support portal.
+                      </p>
+                    </div>
+                    <a class="bold" href="https://intsights.com/blog/the-top-threat-actors-targeting-financial-services-organizations">The Top Threat Actors Targeting Financial Services Organizations</a>
+                  </div>
+                  <div class="container__img">
+                    <h5><strong>Attacking Tools</strong></h5>
+                    <ul>
+                      <li>Carbanak – self-developed backdoor</li>
+                      <li>Designated malware, such as Zeus</li>
+                      <li>Backdoor of the Anunak group signed by a Comodo SSL certification</li>
+                      <li>VBScript land PowerShell script files</li>
+                      <li>Metasploit, PsExec, Mimikatz, FreeRDP, NCat, NPing</li>
+                      <li>NetScan, Backdoor Batel</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </slide>
+          </carousel>
+          <a class="bold" href="https://intsights.com/blog/the-top-threat-actors-targeting-financial-services-organizations">The Top Threat Actors Targeting Financial Services Organizations</a>
+        </div>
     </div>
-
-    <div class="col-md-6">
-      <mdb-card class="animated fadeIn mb-3" borderColor="border-warning">
-        <mdb-card-header>App section</mdb-card-header>
-        <mdb-card-body class="p-3">
-          <mdb-card-title>
-            <h5 class="mb-3">Profile</h5>
-          </mdb-card-title>
-          <mdb-card-text>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi blanditiis, assumenda dolorem
-            possimus id qui ut eaque. Similique porro labore commodi impedit deserunt? Officiis nihil rem aut molestias
-            illum eos! Similique accusantium reprehenderit necessitatibus quo totam provident laudantium recusandae
-            sapiente, nemo ex illum nobis, officia, vero dolores! Distinctio similique pariatur, at sint nemo quidem
-            commodi vel rerum aliquid quibusdam? Perferendis.</mdb-card-text>
-          <a routerLink="/profile" mdbBtn color="orange">Go to section</a>
-        </mdb-card-body>
-      </mdb-card>
-    </div>
-
   </div>
 </div>
