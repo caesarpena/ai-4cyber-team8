@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { ButtonsModule, InputsModule, TableModule, IconsModule, ModalModule } from 'angular-bootstrap-md';
 import { SharedModule } from '../shared/shared.module';
 import { ModellingComponent } from './modelling.component';
+import { AccordionModule } from 'ngx-bootstrap';
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { ModellingComponent } from './modelling.component';
     InputsModule,
     IconsModule,
     TableModule,
+    AccordionModule.forRoot(),
   ],
   declarations: [ModellingComponent],
   exports: [ModellingComponent],

@@ -1,0 +1,55 @@
+
+
+ 
+
+    .container__models {
+        display: flex;
+        overflow-x: auto;
+        .model {
+            margin-right: 30px;
+            img {
+                width: 600px;
+                height: 400px;
+            }
+            h5 {
+                font-weight: 600;
+                margin-left: 100px;
+            }
+        }
+    }
+
+    .container__intelligence {
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .row {
+            justify-content: space-between;
+            max-width: 69%;
+        }
+
+        h4 {
+            font-weight: 600;
+        }
+
+        .container__threats {
+            max-width: 69%;
+            .container__cards {
+                display: flex;
+                flex-wrap: wrap;
+                .card {
+                    margin-right: 20px;
+                    margin-bottom: 50px;
+                    width: 300px;
+                    img {
+                        height: 220px;
+                        width: inherit;
+                    }
+                }
+            }
+        }
+        
+    }
+        
+ 

@@ -6,12 +6,16 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
   styleUrls: ['./modelling.component.scss']
 })
 export class ModellingComponent implements OnInit, OnDestroy {
-    
+    tab: any;
     ngOnInit() { 
-
+      this.tab = '0';
     }
 
     ngOnDestroy() { 
         
+    }
+
+    onClickTab(tabRef: number) {
+      this.tab = tabRef;
     }
 }

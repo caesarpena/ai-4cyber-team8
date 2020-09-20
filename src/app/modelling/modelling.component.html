@@ -1,0 +1,227 @@
+<div class="container-fluid py-5">
+    <div>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <button [ngClass]="{'active': tab === '0'}"  (click)="onClickTab('0')" class="nav-link btn btn-link">Models</button>
+            </li>
+            <li class="nav-item">
+              <button [ngClass]="{'active': tab === '1'}" (click)="onClickTab('1')" class="nav-link btn btn-link">Intelligence Buy-in </button>
+            </li>
+          </ul>
+        <div *ngIf="tab === '0'" class="container__main">
+            <h4>Assets & Models</h4>
+            <accordion>
+                <accordion-group heading="Credit card info">
+                  <div class="container__models">
+                    <div class="model">
+                        <h5>Point-of-sale (PoS) Malware​</h5>
+                        <img src="assets/images/credit-card-info-pos-malware.png" alt="">
+                    </div>
+                    <div class="model">
+                        <h5>ATM Skimming​</h5>
+                        <img src="assets/images/credit-card-info-atm-skimming.png" alt="">
+                    </div>
+                    <div class="model">
+                        <h5>Phishing & Malware Distribution​</h5>
+                        <img src="assets/images/credit-card-info-phishing-malware-distribution.png" alt="">
+                    </div>
+                  </div>
+                </accordion-group>
+                <accordion-group heading="Banking Access">
+                    <div class="container__models">
+                        <div class="model">
+                            <h5>Android Malware Stealing Two-factor Codes</h5>
+                            <img src="assets/images/banking-access-android-malware-stealing.png" alt="">
+                        </div>
+                        <div class="model">
+                            <h5>Credential Stuffing</h5>
+                            <img src="assets/images/banking-access-credential-stuffing.png" alt="">
+                        </div>
+                        <div class="model">
+                            <h5>Guessing Based on Social Media</h5>
+                            <img src="assets/images/banking-access-password-guessing.png" alt="">
+                        </div>
+                      </div>
+                </accordion-group>
+                <accordion-group heading="Proprietary Algorithms">
+                    <div class="container__models">
+                        <div class="model">
+                            <h5>Social Engineering on Employees​</h5>
+                            <img src="assets/images/propierty-algorithms-social-engineering.png" alt="">
+                        </div>
+                        <div class="model">
+                            <h5>Credential Stuffing​</h5>
+                            <img src="assets/images/propietary-algorithms-credential-stuffing-2.png" alt="">
+                        </div>
+                        <div class="model">
+                            <h5>Outbound Emails by Employees​</h5>
+                            <img src="assets/images/propierty-algorithms-outbound-emails.png" alt="">
+                        </div>
+                      </div>
+                </accordion-group>
+                <accordion-group heading="PII Server">
+                    <div class="container__models">
+                        <div class="model">
+                            <h5>Cloud Misconfiguration​</h5>
+                            <img src="assets/images/pii-cloud-misconfig.png" alt="">
+                        </div>
+                        <div class="model">
+                            <h5>Outbound Emails by Employees​</h5>
+                            <img src="assets/images/pii-outbound-emails.png" alt="">
+                        </div>
+                        <div class="model">
+                            <h5>Open Redirect Exploitation​</h5>
+                            <img src="assets/images/pii-open-redirect.png" alt="">
+                        </div>
+                      </div>
+                </accordion-group>
+                <accordion-group heading="Network Access">
+                    <div class="container__models">
+                        <div class="model">
+                            <h5>Vulnerable RDP ports​</h5>
+                            <img src="assets/images/network-access-vulnerable-rdp.png" alt="">
+                        </div>
+                        <div class="model">
+                            <h5>COVID-themed Phishing Emails​​</h5>
+                            <img src="assets/images/network-access-covid-phishing.png" alt="">
+                        </div>
+                        <div class="model">
+                            <h5>Http Browser Backdoor​​</h5>
+                            <img src="assets/images/network-access-http-browser.png" alt="">
+                        </div>
+                      </div>
+                </accordion-group>
+              </accordion> 
+        </div>
+        <div *ngIf="tab === '1'" class=""> 
+            <div class="container__intelligence">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Security Breaches​</h4>
+                        <ul>
+                            <li>
+                                49% of companies in the USA have suffered at least one data breach according to the International Data Corporation (IDC)​
+                            </li>
+                            <li>
+                                26% of companies in the USA have suffered a data breach in the past 12 months​
+                            </li>
+                            <li>
+                                Every 39 seconds, a hacking attack is executed which amounts to 2244 attacks per day (University of Maryland)​
+                            </li>
+                            <li>
+                                Estimated that by 2021, an organization will be the target of a ransomware attack every 11 seconds (Herjavec Group)​
+
+                            </li>
+                            <li>
+                                Although data breaches happen every day, it takes 206 days on average to detect a data breach
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>New Strategies​</h4>
+                        <ul>
+                            <li>
+                                Educate and train all staff on the basics of cybersecurity​
+                            </li>
+                            <li>
+                                Limit access to valuable data better by making sure that only authorized users have access to sensitive data​
+                            </li>
+                            <li>
+                                Regular security posture assessments - We should know what our cyber risks are​
+                            </li>
+                            <li>
+                                Construct a cyber breach response plan - We should know what to do if a breach occurs​
+
+                            </li>
+                            <li>
+                                IT investment into cybersecurity initiatives should be given priority.​
+                            </li>
+                            <li>
+                                3rd party applications pose security risks and should be properly vetted before being implemented​
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container__threats">
+                    <h4>Potential threats to our business​</h4>
+                    <div class="container__cards">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/images/28hack2-superJumbo.png" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Ransomware​</h5>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="assets/images/Malware.jpg" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Malware</h5>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="assets/images/final_featured_art_phishing_istock.jpg" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Phishing</h5>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="assets/images/feature_vul.jpg" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Denial of Service (DoS)​</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Data Breach Costs​​</h4>
+                        <ul>
+                            <li>
+                                US$3.86 million is the average cost of a data breach (IBM)​
+                                <ul>
+                                    <li>
+                                        Detection and escalation US$1.22 million - (31.1%)​
+                                    </li>
+                                    <li>
+                                        Notification US$0.21 million - (5.4%)​
+                                    </li>
+                                    <li>
+                                        Post breach response US$1.07 million - (27.3%)​
+                                    </li>
+                                    <li>
+                                        Lost business US$1.42 million - (36.2%)​
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                On average, the cost of a stolen record is US$150 (IBM)​
+                            </li>
+                            <li>
+                                A breach comprising of 1 million records carries an average cost of US$42 million (IBM).​
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Intelligence based Security​</h4>
+                        <ul>
+                            <li>
+                                Having an incident response team can reduce the cost of a breach by US$19 per record​
+                            </li>
+                            <li>
+                                By using extensive encryption to protect data, organizations can save US$360 000 on a data breach​
+                            </li>
+                            <li>
+                                Backup solutions such as business continuity plans can save a company US$280 000 on a data breach​
+                            </li>
+                            <li>
+                                Implementing the security analytics tools can save organizations up to US$200 000 on a data breach​
+                            </li>
+                            <li>
+                                Implementing two factor authentication makes it difficult for criminals to gain access, even if a phishing attempt was successful​
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
