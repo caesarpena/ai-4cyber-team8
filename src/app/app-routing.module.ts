@@ -10,12 +10,14 @@ import { AdminComponent } from './admin/containers/admin/admin.component';
 import { AdminGuard } from './admin/guard/admin.guard';
 import { AboutComponent } from './about/about.component';
 import { ModellingComponent } from './modelling/modelling.component';
+import { DatasetShellComponent } from './dataset-shell/dataset-shell.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, children: [
     { path: '', component: MainComponent},
     { path: 'about', component: AboutComponent, canActivate: [AuthGuard]},
     { path: 'modelling', component: ModellingComponent, canActivate: [AuthGuard]},
+    { path: 'datasets', component: DatasetShellComponent, canActivate: [AuthGuard]},
     // { path: 'projects', loadChildren: './projects/projects.module#ProjectsModule', canActivate: [AuthGuard]},
     // { path: 'customers', loadChildren: './customers/customers.module#CustomersModule', canActivate: [AuthGuard]},
     // { path: 'profile', loadChildren: './profile/profile.module#ProfileModule', canActivate: [AuthGuard] },

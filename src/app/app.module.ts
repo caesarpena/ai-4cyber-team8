@@ -20,6 +20,7 @@ import { SharedModule } from './shared/shared.module';
 import { AdminModule } from './admin/admin.module';
 import { AboutModule } from './about/about.module';
 import { ModellingModule } from './modelling/modelling.module';
+import { DatasetShellModule } from './dataset-shell/dataset-shell.module';
 import { ModalModule } from 'angular-bootstrap-md';
 
 @NgModule({
@@ -39,6 +40,7 @@ import { ModalModule } from 'angular-bootstrap-md';
     CoreModule,
     AboutModule,
     ModellingModule,
+    DatasetShellModule,
     StoreModule.forRoot(reducers, {
       runtimeChecks: {
         strictStateImmutability: true,

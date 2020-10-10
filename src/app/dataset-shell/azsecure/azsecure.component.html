@@ -1,0 +1,46 @@
+<div>
+    <table *ngIf="azProducts.length > 0" class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">product_name</th>
+            <th scope="col">category</th>
+            <th scope="col">description</th>
+            <th scope="col">shipping_options</th>
+            <th scope="col">keywords</th>
+            <th scope="col">seller_name</th>
+            <th scope="col">price</th>
+            <th scope="col">payment_method</th>
+            <th scope="col">sold_since</th>
+            <th scope="col">ends_in</th>
+            <th scope="col">quantity_sold</th>
+            <th scope="col">quantity_left</th>
+            <th scope="col">refundPolicy</th>
+            <th scope="col">market_name</th>
+            <th scope="col">ship_from</th>
+            <th scope="col">ship_to</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of azProducts; let i = index">
+            <th scope="row">{{item.seqNo}}</th>
+            <td>{{item.product_name}}</td>
+            <td>{{item.category}}</td>
+            <td>{{item.description}}</td>
+            <td>{{item.shipping_options}}</td>
+            <td>{{item.keywords}}</td>
+            <td>{{item.seller_name}}</td>
+            <td>{{item.price}}</td>
+            <td>{{item.payment_method}}</td>
+            <td>{{item.sold_since}}</td>
+            <td>{{item.ends_in}}</td>
+            <td>{{item.quantity_sold}}</td>
+            <td>{{item.quantity_left}}</td>
+            <td>{{item.refundPolicy}}</td>
+            <td>{{item.market_name}}</td>
+            <td>{{item.ship_from}}</td>
+            <td>{{item.ship_to}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>

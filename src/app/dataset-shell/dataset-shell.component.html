@@ -1,0 +1,20 @@
+<div class="container-fluid py-5">
+    <div>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <button [ngClass]="{'active': tab === '0'}"  (click)="onClickTab('0')" class="nav-link btn btn-link">Dataset source 1</button>
+            </li>
+            <li class="nav-item">
+              <button [ngClass]="{'active': tab === '1'}" (click)="onClickTab('1')" class="nav-link btn btn-link">Dataset source 2</button>
+            </li>
+          </ul>
+        <div *ngIf="tab === '0'" class="container__main">
+            <h4>AZ Secure data</h4>
+            <app-azsecure></app-azsecure>
+        </div>
+        <div *ngIf="tab === '1'" class="container__main"> 
+            <h4>Phish Tank data</h4>
+            <app-phishtank></app-phishtank>
+        </div>
+    </div>
+</div>
