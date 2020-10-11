@@ -10,10 +10,17 @@
           </ul>
         <div *ngIf="tab === '0'" class="container__main">
             <h4>AZ Secure data</h4>
+            <p><a href="azsecure-data.org">azsecure-data.org</a> Open source community offers datasets gathered by cyber security researchers. 
+              The categories vary from darkweb forums to phishing data. We selected 2 datasets related to trades in multiple darkweb markets.
+              We expect to find malware trading that could help the organization create have a better picture around what types of malwares are currently being used and to create a persona using buyer's data
+            </p>
             <app-azsecure></app-azsecure>
         </div>
         <div *ngIf="tab === '1'" class="container__main"> 
             <h4>Phish Tank data</h4>
+            <p><a href="www.phishtank.com">Phishtank.com</a> its an open source community that contains thousands of blacklist domains and Ips blacklisted for abuse
+            many of which were listed for targeting finalcial institutions. We expect to create intelligence and security by analyzing the patterns in these attacks.
+            </p>
             <app-phishtank></app-phishtank>
         </div>
     </div>

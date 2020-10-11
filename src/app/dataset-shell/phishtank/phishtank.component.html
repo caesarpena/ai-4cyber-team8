@@ -1,8 +1,8 @@
-<div>
+<div class="my-custom-scrollbar table-wrapper-scroll-y">
     <table *ngIf="phishInfo.length > 0" class="table">
         <thead>
-          <tr>
-            <th scope="col">#</th>
+          <tr class="gray">
+            <th scope="col">id</th>
             <th scope="col">url</th>
             <th scope="col">phish_detail_url</th>
             <th scope="col">submission_time</th>
@@ -15,7 +15,7 @@
         <tbody>
           <tr *ngFor="let item of phishInfo; let i = index">
             <th scope="row">{{item.phish_id}}</th>
-            <td>{{item.url}}</td>
+            <td><div style="width: 500px; word-break: break-word;">{{item.url}}</div></td>
             <td>{{item.phish_detail_url}}</td>
             <td>{{item.submission_time}}</td>
             <td>{{item.verified}}</td>
