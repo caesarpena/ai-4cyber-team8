@@ -1,46 +1,75 @@
 <div class="my-custom-scrollbar table-wrapper-scroll-y">
-    <table *ngIf="azProducts.length > 0" class="table">
-        <thead>
-          <tr class="gray">
-            <th scope="col">id</th>
-            <th scope="col">product_name</th>
-            <th scope="col">category</th>
-            <th scope="col">description</th>
-            <th scope="col">shipping_options</th>
-            <th scope="col">keywords</th>
-            <th scope="col">seller_name</th>
-            <th scope="col">price</th>
-            <th scope="col">payment_method</th>
-            <th scope="col">sold_since</th>
-            <th scope="col">ends_in</th>
-            <th scope="col">quantity_sold</th>
-            <th scope="col">quantity_left</th>
-            <th scope="col">refundPolicy</th>
-            <th scope="col">market_name</th>
-            <th scope="col">ship_from</th>
-            <th scope="col">ship_to</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let item of azProducts; let i = index">
-            <th scope="row">{{item.seqNo}}</th>
-            <td>{{item.product_name}}</td>
-            <td>{{item.category}}</td>
-            <td>{{item.description}}</td>
-            <td>{{item.shipping_options}}</td>
-            <td>{{item.keywords}}</td>
-            <td>{{item.seller_name}}</td>
-            <td>{{item.price}}</td>
-            <td>{{item.payment_method}}</td>
-            <td>{{item.sold_since}}</td>
-            <td>{{item.ends_in}}</td>
-            <td>{{item.quantity_sold}}</td>
-            <td>{{item.quantity_left}}</td>
-            <td>{{item.refundPolicy}}</td>
-            <td>{{item.market_name}}</td>
-            <td>{{item.ship_from}}</td>
-            <td>{{item.ship_to}}</td>
-          </tr>
-        </tbody>
-      </table>
+  <table *ngIf="azProducts.length > 0" class="table">
+      <thead>
+        <tr class="gray">
+          <th scope="col">id</th>
+          <th scope="col">product_name</th>
+          <th scope="col">category</th>
+          <th scope="col">description</th>
+          <th scope="col">shipping_options</th>
+          <th scope="col">keywords</th>
+          <th scope="col">seller_name</th>
+          <th scope="col">price</th>
+          <th scope="col">payment_method</th>
+          <th scope="col">sold_since</th>
+          <th scope="col">ends_in</th>
+          <th scope="col">quantity_sold</th>
+          <th scope="col">quantity_left</th>
+          <th scope="col">refundPolicy</th>
+          <th scope="col">market_name</th>
+          <th scope="col">ship_from</th>
+          <th scope="col">ship_to</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of azProducts; let i = index">
+          <th scope="row">{{item.seqNo}}</th>
+          <td>{{item.product_name}}</td>
+          <td>{{item.category}}</td>
+          <td>{{item.description}}</td>
+          <td>{{item.shipping_options}}</td>
+          <td>{{item.keywords}}</td>
+          <td>{{item.seller_name}}</td>
+          <td>{{item.price}}</td>
+          <td>{{item.payment_method}}</td>
+          <td>{{item.sold_since}}</td>
+          <td>{{item.ends_in}}</td>
+          <td>{{item.quantity_sold}}</td>
+          <td>{{item.quantity_left}}</td>
+          <td>{{item.refundPolicy}}</td>
+          <td>{{item.market_name}}</td>
+          <td>{{item.ship_from}}</td>
+          <td>{{item.ship_to}}</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+<div>
+  <h4>Keywords Used by Underground Sellers</h4>
+  <div class="row">
+    <div class="col-md-6">
+      <img style="width: 800px; height: 300px; " src="../../assets/images/Picture2.png" alt="">
+    </div>
+    <div class="col-md-6">
+      <h5>Threat Prone Keywords Classification</h5>
+      <h6><strong>Process</strong></h6>
+      <ul>
+        <li>Extract and download forum data in CSV</li>
+        <li>Select relevant text fields only </li>
+        <li>Ingest data to MonkeyLearn (=SaaS tool offering pre-trained text analysis models)</li>
+        <li>The tool will automatically process Tokenization, Text Normalization and Deduplication</li>
+        <li>Train the model to classify sellers/topics that are specific to our project</li>
+        <li>Add stop words as needed</li>
+        <li>Continue training until satisfied with precision level</li>
+        <li>Create a word cloud</li>
+      </ul>
+      <h6><strong>Value</strong></h6>
+      <ul>
+        <h5>Threat Prone Key</h5>
+        <li>Identifies hidden patterns and keywords that underground sellers often use in their posting</li>
+        <li>Identifies any keywords that are immediate threat to the organization</li>
+        <li>Helps to align further analysis</li>
+      </ul>
+    </div>
+  </div>
 </div>

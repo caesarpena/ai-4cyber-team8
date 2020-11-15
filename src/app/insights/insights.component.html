@@ -1,0 +1,87 @@
+<div class="container-fluid py-5">
+    <div>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <button [ngClass]="{'active': tab === '0'}"  (click)="onClickTab('0')" class="nav-link btn btn-link">Operational Intelligence</button>
+            </li>
+            <li class="nav-item">
+              <button [ngClass]="{'active': tab === '1'}" (click)="onClickTab('1')" class="nav-link btn btn-link">Follow-up Actions</button>
+            </li>
+          </ul>
+        <div *ngIf="tab === '0'" class="container__main">
+            <div class="mb-5">
+                <h4><strong>Key Insights and Intelligence summary</strong></h4>
+                <div>
+                    <ul>
+                        <li>Number of Products from DarkWeb has been doubled from 2016 to 2017</li>
+                        <li>Number of Sellers have exponentially increased 300% by 2017 from 690 to 2090</li>
+                        <li>The phishing activities are on the consistent rise targeting Payment Services reaching approx. 15,000 attacks until Oct 2020</li>
+                        <li>Number of attacks on the payment services domain are on the rise and most prone to the attack, followed by Banks and Govt Organizations</li>
+                        <li>Keywords such as premium lifetime, CVV are more prominently used by underground sellers</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-4">
+                <h4><strong>Intelligence Dissemination</strong></h4>
+                <p class="mb-3">
+                    Due to the different stakeholders that will be using the intelligence gathered, the dissemination thereof will be tailored for different audience and scenarios
+                </p>
+                <div>
+                    <h5>Within the financial sector</h5>
+                    <ul>
+                        <li>Tailored reports will be sent out to the industry90 to 2090</li>
+                        <li>Partners within the sector will get access to automated feeds and APIs for to make sure that they always have access to the latest intelligence</li>
+                        <li>A searchable knowledge base will be made available</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Within the company</h5>
+                    <ul>
+                        <li>Quarterly AI4Cyber awareness sessions to sensitize all employees and customers</li>
+                        <li>Monthly tailored reports targeting employees and customers at different levels</li>
+                        <li>Where a user is directly targeted, automated alerts will be sent out</li>
+                        <li>All users will have access to automated feeds and APIs for real-time protection</li>
+                    </ul>
+                </div>
+            </div>
+        
+        </div>
+        <div *ngIf="tab === '1'" class="container__main"> 
+            <div>
+                <div class="mb-5"> 
+                    <h4> <strong>Courses of action based on intelligence</strong></h4>
+                    <div>
+                        <ul>
+                            <li>
+                                Make sure no malicious e-mail reach users: Spam filter on the mail server to scan all incoming mails, flag and block those that fail to meet security criteria
+                            </li>
+                            <li>Block all unauthorized access attempts: Firewalls should include the gathered intelligence in all security scans</li>
+                            <li>
+                                Minimize the possible points of attack: All ports that are not being used on the firewall to be blocked and those in production to be constantly monitored
+                            </li>
+                            <li>Detect all breach attempts: An intrusion prevention system to be installed to improve security and get more value from the gathered intelligence</li>
+                            <li>Improve client devices security: Implement two factor authentication logins</li>
+                            <li>After all courses of action have been implemented, vulnerability assessments should be done frequently for continuous improvement</li>
+                            <li>The above is suitable for our organization because the solutions address our immediate cyber problems while leaving room for future upgrades</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h4><strong>Critical Assets to prioritize</strong></h4>
+                    <ul>
+                        <li>Company data
+                        </li>
+                        <li>Internal Network
+                        </li>
+                        <li>Physical servers
+                        </li>
+                        <li>Financial systems
+                        </li>
+                        <li>Enterprise Resource Planning (ERP)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

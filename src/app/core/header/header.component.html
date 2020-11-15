@@ -23,7 +23,10 @@
         <a (click)="navbar.hide()" class="nav-link waves-light" routerLink="/about" routerLinkActive="active" mdbWavesEffect>About us</a>
       </li>
       <li *ngIf="isLoggedIn && !isLoading" class="nav-item">
-        <a (click)="navbar.hide()" class="nav-link waves-light" routerLink="/datasets" routerLinkActive="active" mdbWavesEffect>Datasets</a>
+        <a (click)="navbar.hide()" class="nav-link waves-light" routerLink="/datasets" routerLinkActive="active" mdbWavesEffect>Datasets & Visualizations</a>
+      </li>
+      <li *ngIf="isLoggedIn && !isLoading" class="nav-item">
+        <a (click)="navbar.hide()" class="nav-link waves-light" routerLink="/actions" routerLinkActive="active" mdbWavesEffect>Follow-up Actions</a>
       </li>
 
       <!-- <li *ngIf="isLoggedIn && !isLoading" class="nav-item">

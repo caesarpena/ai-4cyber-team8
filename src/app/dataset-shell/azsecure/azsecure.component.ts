@@ -16,11 +16,7 @@ export class AzSecureComponent implements OnInit, OnDestroy {
     ngOnInit() { 
        this._azSecureService.getProducts2016().subscribe((data) => {
         this.azProducts = data;
-        
-        console.log('dfgdfgdfg');
-        console.log(this.azProducts[0].seqNo);
        });
-      //  console.log(this.azProducts);
     }
     ngOnDestroy() { 
         

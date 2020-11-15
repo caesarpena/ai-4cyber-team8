@@ -22,9 +22,10 @@ import { AboutModule } from './about/about.module';
 import { ModellingModule } from './modelling/modelling.module';
 import { DatasetShellModule } from './dataset-shell/dataset-shell.module';
 import { ModalModule } from 'angular-bootstrap-md';
+import { InsightsComponent } from './insights/insights.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, InsightsComponent],
   imports: [
     BrowserModule,
     AuthModule,
